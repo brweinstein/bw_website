@@ -103,13 +103,13 @@ export default function ContactForm() {
       {/* Status Messages */}
       {submitStatus === 'success' && (
         <div className="p-4 bg-green-800/20 border border-green-600 rounded-lg">
-          <p className="text-green-400 text-center">✅ Message sent successfully! I&apos;ll get back to you soon.</p>
+          <p className="text-green-400 text-center">Message sent successfully! I&apos;ll get back to you soon.</p>
         </div>
       )}
       
       {submitStatus === 'error' && (
         <div className="p-4 bg-red-800/20 border border-red-600 rounded-lg">
-          <p className="text-red-400 text-center">❌ Failed to send message. Please try again or contact me directly.</p>
+          <p className="text-red-400 text-center">Failed to send message. Please try again or contact me directly.</p>
         </div>
       )}
       
