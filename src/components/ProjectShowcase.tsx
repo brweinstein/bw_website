@@ -27,6 +27,8 @@ const getTechIcon = (tech: string): string | null => {
     'C': '/icons/c.png',
     'Lua': '/icons/lua.png',
     'LaTeX': '/icons/latex.png',
+    'WASM': '/icons/wasm.png',
+    'Git': '/icons/git.png',
   };
   
   // Check for exact match first
