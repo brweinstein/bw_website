@@ -11,9 +11,9 @@ const skills = [
   { name: 'HTML', imagePath: '/icons/html.png', color: '#e44d26' },
   { name: 'Tailwind', imagePath: '/icons/tailwind.png', color: '#06b6d4' },
   { name: 'Next.js', imagePath: '/icons/nextjs.svg', color: '#000000' },
-  { name: 'LaTeX', imagePath: '/icons/latex.png', color: '#008080' },
+  { name: 'WASM', imagePath: '/icons/wasm.png', color: '#654ff0' },
+  { name: 'Git', imagePath: '/icons/git.png', color: '#f14e32' },
   { name: 'Docker', imagePath: '/icons/docker.png', color: '#2496ed' },
-  { name: 'Neovim', imagePath: '/icons/neovim.svg', color: '#57a143' },
   { name: 'Linux', imagePath: '/icons/linux.png', color: '#fcc624' },
 ];
 

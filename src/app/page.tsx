@@ -34,12 +34,12 @@ export default function Home() {
               
               <div className="space-y-6 text-gray-300 leading-relaxed">
                 <p className="text-lg">
-                  Fully committed to the philosophy of life-long learning, I&apos;m an 
+                  I&apos;m an 
                   <span className="text-blue-400 font-semibold"> Honours Mathematics student at University of Waterloo</span> with 
-                  a deep passion for systems programming, data science, and innovative problem-solving.
+                  a passion for systems programming, learning, and innovative problem-solving.
                 </p>
                 <p>
-                  The unique combination of mathematical rigor, creative thinking, and cutting-edge technology 
+                  The combination of mathematical rigor, creative thinking, and cutting-edge technology 
                   drives my excitement for building efficient, elegant solutions to complex problems.
                 </p>
                 <p>
@@ -65,7 +65,16 @@ export default function Home() {
           <p className="text-gray-300 text-lg mb-16">A showcase of my latest work and experiments</p>
         </div>
 
-        {/* Project 1: greprs */}
+        {/* Project 1: corsa */}
+        <ProjectShowcase
+          title="corsa"
+          description="RSA visualizer with a Rust/WASM core and a modern Next.js UI. Explore RSA encryption and decryption interactively with real-time visual feedback and step-by-step demonstrations of the cryptographic process."
+          githubUrl="https://github.com/brweinstein/corsa"
+          technologies={["Rust", "WASM", "Next.js", "TypeScript", "Cryptography"]}
+          imageUrl="/demo/corsa-demo.gif"
+        />
+
+        {/* Project 2: greprs */}
         <ProjectShowcase
           title="greprs"
           description="A lightning-fast grep clone written in Rust with parallel processing and modern features. Optimized to be competitive with GNU Grep (~5% slower) on most workloads. greprs scales with larger workloads due to parallelism and efficient memory usage."
@@ -74,7 +83,7 @@ export default function Home() {
           imageUrl="/demo/greprs-demo.png"
         />
 
-        {/* Project 2: Tree Navigator */}
+        {/* Project 3: Tree Navigator */}
         <ProjectShowcase
           title="Tree Navigator"
           description="A lightweight Obsidian plugin that adds a dedicated, keyboard-navigable tree view of your vault. Expand, collapse, and open folders and files without touching the mouse. Features smooth animations and intuitive navigation."
@@ -83,22 +92,13 @@ export default function Home() {
           imageUrl="/demo/tree-navigator-demo.gif"
         />
 
-        {/* Project 3: anomaly */}
+        {/* Project 4: runmd */}
         <ProjectShowcase
-          title="anomaly"
-          description="Machine learning project for anomaly detection in time series data using unsupervised learning models like Isolation Forest and technical indicators. Includes data preprocessing, feature engineering, and visualization tools."
-          githubUrl="https://github.com/brweinstein/anomaly"
-          technologies={["Python", "Machine Learning", "Data Science", "Pandas"]}
-          imageUrl="/demo/anomaly-demo.png"
-        />
-
-        {/* Project 4: flowrs */}
-        <ProjectShowcase
-          title="flowrs"
-          description="An efficient, modular solver for Flow Free puzzles using Rust. Implemented a recursive backtracking solver with optimization techniques and early-stage support for reinforcement learning agents written in Python."
-          githubUrl="https://github.com/brweinstein/flowrs"
-          technologies={["Rust", "Python", "Reinforcement Learning", "Game AI"]}
-          imageUrl="/demo/flowrs-demo.gif"
+          title="runmd"
+          description="A high-performance Rust tool to execute code blocks in Markdown files and insert their outputs inline. Perfect for maintaining up-to-date documentation with live code examples and automated output generation."
+          githubUrl="https://github.com/brweinstein/runmd"
+          technologies={["Rust", "CLI", "Markdown", "Documentation"]}
+          imageUrl="/demo/runmd-demo.gif"
         />
       </section>
 
