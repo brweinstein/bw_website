@@ -1,6 +1,6 @@
 # Ben Weinstein - Portfolio
 
-> [weinstein.vercel.app](https://weinstein.vercel.app)
+> [bweinstein.me](https://bweinstein.me)
 
 My personal portfolio built with modern web tech. Mathematics student at University of Waterloo interested in systems programming and data science.
 
