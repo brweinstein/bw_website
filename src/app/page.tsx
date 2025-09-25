@@ -97,7 +97,7 @@ export default function Home() {
           title="runmd"
           description="A high-performance Rust tool to execute code blocks in Markdown files and insert their outputs inline. Perfect for maintaining up-to-date documentation with live code examples and automated output generation."
           githubUrl="https://github.com/brweinstein/runmd"
-          technologies={["Rust", "CLI", "Markdown", "Documentation"]}
+          technologies={["Rust", "Python", "CLI", "Markdown"]}
           imageUrl="/demo/runmd-demo.gif"
         />
       </section>
