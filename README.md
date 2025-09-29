@@ -2,7 +2,7 @@
 
 > [bweinstein.me](https://bweinstein.me)
 
-My personal portfolio built with modern web tech. Mathematics student at University of Waterloo interested in systems programming and data science.
+My personal portfolio built with Typescript, Next.js, and Tailwind CSS. Mathematics student at University of Waterloo interested in full-stack development.
 
 ## What's Here
 
