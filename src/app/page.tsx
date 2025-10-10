@@ -1,9 +1,8 @@
-import ProjectShowcase from '@/components/ProjectShowcase';
+import ProjectCard from '@/components/TitleCard';
 import Navbar from '@/components/Navbar';
 import ContactForm from '@/components/ContactForm';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import ProfilePicture from '@/components/ProfilePicture';
-import InteractiveSkills from '@/components/InteractiveSkills';
 
 export default function Home() {
   return (
@@ -17,89 +16,52 @@ export default function Home() {
             Hello, I&apos;m <span className="text-blue-400">Ben Weinstein</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Passionate about <span className="text-orange-400 font-semibold">Rust</span>, <span className="text-blue-400 font-semibold">Python</span>, and <span className="text-green-400 font-semibold">unique projects</span>
+            Honours Mathematics student at University of Waterloo
+            
+            Passionate about <span className="text-orange-400 font-semibold">Rust</span>, <span className="text-yellow-400 font-semibold">Python</span>, and <span className="text-blue-400 font-semibold">TypeScript</span>
           </p>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 bg-gray-900">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-16 text-white">About Me</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Profile and description */}
-            <div className="space-y-8">
-              <ProfilePicture />
-              
-              <div className="space-y-6 text-gray-300 leading-relaxed">
-                <p className="text-lg">
-                  I&apos;m an 
-                  <span className="text-blue-400 font-semibold"> Honours Mathematics student at University of Waterloo</span> with 
-                  a passion for systems programming, learning, and innovative problem-solving.
-                </p>
-                <p>
-                  The combination of mathematical rigor, creative thinking, and cutting-edge technology 
-                  drives my excitement for building efficient, elegant solutions to complex problems.
-                </p>
-                <p>
-                  When I&apos;m not coding or studying, I enjoy working out and diving deep into mathematical 
-                  literature like <span className="text-purple-400 font-medium">&quot;How to Prove It&quot; by Daniel Velleman</span> to sharpen my logical reasoning skills.
-                </p>
-              </div>
-            </div>
+      {/* Projects Section */}
+      <section id="projects" className="bg-gray-800 py-20">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+            <p className="text-gray-300 text-lg">A showcase of my latest work and experiments</p>
+          </div>
 
-            {/* Right side - Interactive skills */}
-            <div>
-              <h3 className="text-2xl font-bold text-center mb-8 text-white">Tech Stack</h3>
-              <InteractiveSkills />
-            </div>
+          {/* Projects Grid - 2 per row */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <ProjectCard
+              title="corsa"
+              description="RSA visualizer with a Rust/WASM core and a Next.js UI. Explore RSA encryption and decryption interactively with real-time visual feedback and step-by-step demonstrations of the cryptographic process."
+              githubUrl="https://github.com/brweinstein/corsa"
+              imageUrl="/demo/corsa-demo.gif"
+            />
+
+            <ProjectCard
+              title="greprs"
+              description="A lightning-fast grep clone written in Rust with parallel processing and modern features. Optimized to be competitive with GNU Grep (~5% slower) on most workloads."
+              githubUrl="https://github.com/brweinstein/greprs"
+              imageUrl="/demo/greprs-demo.png"
+            />
+
+            <ProjectCard
+              title="Tree Navigator"
+              description="A lightweight Obsidian plugin that adds a dedicated, keyboard-navigable tree view of your vault. Expand, collapse, and open folders and files without touching the mouse."
+              githubUrl="https://github.com/brweinstein/obsidian-tree"
+              imageUrl="/demo/tree-navigator-demo.gif"
+            />
+
+            <ProjectCard
+              title="runmd"
+              description="A high-performance Rust tool to execute code blocks in Markdown files and insert their outputs inline. Perfect for maintaining up-to-date documentation with live code examples."
+              githubUrl="https://github.com/brweinstein/runmd"
+              imageUrl="/demo/runmd-demo.gif"
+            />
           </div>
         </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="bg-gray-800">
-        <div className="text-center py-20">
-          <h2 className="text-4xl font-bold text-white mb-8">Featured Projects</h2>
-          <p className="text-gray-300 text-lg mb-16">A showcase of my latest work and experiments</p>
-        </div>
-
-        {/* Project 1: corsa */}
-        <ProjectShowcase
-          title="corsa"
-          description="RSA visualizer with a Rust/WASM core and a modern Next.js UI. Explore RSA encryption and decryption interactively with real-time visual feedback and step-by-step demonstrations of the cryptographic process."
-          githubUrl="https://github.com/brweinstein/corsa"
-          technologies={["Rust", "WASM", "Next.js", "TypeScript", "Cryptography"]}
-          imageUrl="/demo/corsa-demo.gif"
-        />
-
-        {/* Project 2: greprs */}
-        <ProjectShowcase
-          title="greprs"
-          description="A lightning-fast grep clone written in Rust with parallel processing and modern features. Optimized to be competitive with GNU Grep (~5% slower) on most workloads. greprs scales with larger workloads due to parallelism and efficient memory usage."
-          githubUrl="https://github.com/brweinstein/greprs"
-          technologies={["Rust", "CLI", "Regex", "Parallel Processing"]}
-          imageUrl="/demo/greprs-demo.png"
-        />
-
-        {/* Project 3: Tree Navigator */}
-        <ProjectShowcase
-          title="Tree Navigator"
-          description="A lightweight Obsidian plugin that adds a dedicated, keyboard-navigable tree view of your vault. Expand, collapse, and open folders and files without touching the mouse. Features smooth animations and intuitive navigation."
-          githubUrl="https://github.com/brweinstein/obsidian-tree"
-          technologies={["TypeScript", "Plugin", "CSS", "Obsidian API"]}
-          imageUrl="/demo/tree-navigator-demo.gif"
-        />
-
-        {/* Project 4: runmd */}
-        <ProjectShowcase
-          title="runmd"
-          description="A high-performance Rust tool to execute code blocks in Markdown files and insert their outputs inline. Perfect for maintaining up-to-date documentation with live code examples and automated output generation."
-          githubUrl="https://github.com/brweinstein/runmd"
-          technologies={["Rust", "Python", "CLI", "Markdown"]}
-          imageUrl="/demo/runmd-demo.gif"
-        />
       </section>
 
       {/* Contact Section */}
