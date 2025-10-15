@@ -34,8 +34,8 @@ export default function Home() {
           {/* Projects Grid - 2 per row */}
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectCard
-              title="corsa"
-              description="RSA visualizer with a Rust/WASM core and a Next.js UI. Explore RSA encryption and decryption interactively with real-time visual feedback and step-by-step demonstrations of the cryptographic process."
+              title="Cryptography Visualizer"
+              description="Interactive cryptography demos powered by Rust + WebAssembly and a Next.js UI. Features include: RSA key generation and visualizer, Diffie–Hellman key exchange walkthrough, AES round breakdown, SHA‑256 stepper, and Discrete Log exploration."
               githubUrl="https://github.com/brweinstein/corsa"
               imageUrl="/demo/corsa-demo.gif"
             />
