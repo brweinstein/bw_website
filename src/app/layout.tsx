@@ -20,19 +20,19 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ben Weinstein - Portfolio",
   description: "Honours Mathematics student at University of Waterloo, passionate about Rust, data science, and unique projects.",
-  keywords: ["Ben Weinstein", "Portfolio", "University of Waterloo", "Mathematics", "Rust", "Data Science", "TypeScript", "Python"],
+  keywords: ["Ben Weinstein", "Portfolio", "University of Waterloo", "Mathematics", "Rust", "Economics", "TypeScript", "Python"],
   authors: [{ name: "Ben Weinstein" }],
   openGraph: {
     title: "Ben Weinstein - Portfolio",
-    description: "Honours Mathematics student at University of Waterloo, passionate about Rust, data science, and unique projects.",
-    url: "https://weinstein.vercel.app",
+    description: "Honours Mathematics student at University of Waterloo, passionate about Rust, economics, and unique projects.",
+    url: "https://www.bweinstein.me/.",
     siteName: "Ben Weinstein Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ben Weinstein - Portfolio",
-    description: "Honours Mathematics student at University of Waterloo, passionate about Rust, data science, and unique projects.",
+    description: "Honours Mathematics student at University of Waterloo, passionate about Rust, Economics, and unique projects.",
   },
 };
 
