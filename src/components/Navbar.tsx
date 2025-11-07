@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useScrollProgress } from '@/hooks/useScrollAnimations';
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
@@ -47,7 +46,6 @@ export default function Navbar() {
 
   useEffect(() => {
     let ticking = false;
-    let lastActiveSection = 'home';
 
     const handleScroll = () => {
       if (!ticking) {
@@ -130,7 +128,7 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-center space-x-2">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <div
                 key={item.id}
               >

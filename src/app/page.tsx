@@ -6,7 +6,7 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import Typewriter from '@/components/Typewriter';
-import { useScrollAnimation, useParallax } from '@/hooks/useScrollAnimations';
+import { useParallax } from '@/hooks/useScrollAnimations';
 
 export default function Home() {
   const parallaxOffset = useParallax(0.3);
