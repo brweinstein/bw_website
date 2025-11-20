@@ -135,6 +135,15 @@ export default function ProjectsSection() {
               imageUrl="/demo/runmd-demo.gif"
             />
           </motion.div>
+          <motion.div variants={cardVariants}>
+            <ProjectCard
+              title="Flowrs"
+              description="A Rust-based solver for puzzles from the Flow Free mobile game. Inspired by mzucker’s flow-solver, this project aims to build efficient, modular solvers for Flow puzzles using Rust."
+              githubUrl="https://github.com/brweinstein/flowrs"
+              imageUrl="/demo/flowrs-demo.png"
+            />
+          </motion.div>
+
         </motion.div>
       </div>
     </section>
